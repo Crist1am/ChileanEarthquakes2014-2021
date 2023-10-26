@@ -9,13 +9,56 @@ Este repositorio contiene un proceso ETL (Extract, Transform, Load) para analiza
 * SQL Server Management Studio (para consultas SQL)
 * PowerBI (para análisis visual)
 
+
+## Instrucciones de Uso
+
+1. Situate en el directorio donde vas a realizar el clone 
+```bash 
+cd ruta/de/directorio
+```
+
+2. Clona este repositorio
+```bash 
+git clone https://github.com/Crist1am/Chilean-earthquakes.git
+```
+
+3. Crea un entorno virtual 'myenv'
+```bash 
+    a. Si estas usando macOs, abre la terminal e ingresa
+
+        python3 -m venv myenv
+
+
+    b. Si estas usando Windows, ingresa en la terminal
+
+        python -m venv myenv
+
+```
+
+3. Activa el entorno virtual
+```bash 
+    a. Usando macOS, escribe en la terminal:
+        source myenv/bin/activate
+
+    b. Usando Windows, escribe en la terminal:
+        myenv\Scripts\activate
+
+```
+
+4. Instala las librerias necesarias desde la terminal
 ```bash
     pip install pandas
     pip install matplotlib
     pip install plotly
 ```
-* SQL Server Management Studio (para consultas SQL)
-* PowerBI (para análisis visual)
+
+5. Ejecuta el archivo ETL.py para realizar el proceso ETL y generar las tablas CSV en el directorio /Dataset.
+
+6. Ejecuta el archivo EDA.py para realizar un análisis de datos exploratorio con los datos limpios y ver el comportamiento de las variables.
+
+7. Importa las tablas en SQL SMS y PowerBI según tus necesidades para realizar análisis detallados y visualizaciones interactivas.
+
+8. Disfruta explorando y analizando los datos de sismos percibidos en Chile!.
 
 
 ## Contenido del Repositorio
@@ -114,46 +157,3 @@ Como resultado del primer gráfico del tercer *merge* se tiene que Chile tuvo 55
     ORDER BY Mes;
 
 ```
-
-## Instrucciones de Uso
-
-1. Situate en el directorio donde vas a realizar el clone 
-```bash 
-cd ruta/de/directorio
-```
-
-2. Clona este repositorio
-```bash 
-git clone https://github.com/Crist1am/Chilean-earthquakes.git
-```
-
-3. Crea un entorno virtual 'myenv'
-```bash 
-    a. Si estas usando macOs, abre la terminal e ingresa
-
-        python3 -m venv myenv
-
-
-    b. Si estas usando Windows, ingresa en la terminal
-
-        python -m venv myenv
-
-```
-
-3. Activa el entorno virtual
-```bash 
-    a. Usando macOS:
-        source myenv/bin/activate
-
-    b. Usando Windows:
-        C:\ruta\hacia\tu\proyecto\myenv\Scripts\activate
-
-```
-
-Abre el archivo ETL.py en Visual Studio Code.
-
-3. Ejecuta el archivo para realizar el proceso ETL y generar las tablas CSV en el directorio /Dataset.
-
-4. Importa las tablas en SQL SMS y PowerBI según tus necesidades para realizar análisis detallados y visualizaciones interactivas.
-
-5. Disfruta explorando y analizando los datos de sismos percibidos en Chile!.
