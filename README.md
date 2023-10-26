@@ -131,6 +131,22 @@ Se realizó un tercer *merge* uniendo el df_fecha con df_sismos (mendiante la ll
 Como resultado del primer gráfico del tercer *merge* se tiene que Chile tuvo 5577 sismos entre los años 2014 y 2021, seguido por Argentina, la cual tuvo 1608 sismos que fueron percibidos en Chile, por le contrario, los sismos con epicentro en Perú son los que menos se perciben en Chile. Y finalemente, el segundo gráfico realizado con este *merge* muestra que (probablemente debido a la cantidad de datos), Chile es quien tiene el sismo de mayor y menor magnitud (8.3 y 1.8 respectivamente) y con respecto al promedio, todos bordean el 4.4.
 
 
+## Galería de imagenes 
+![Cantidad de sismos por país](Plots/CountSisCountry.png)
+
+![Magnitud máxima, mínima y promedio por país](Plots/MagMaxMinMeanCountries.png)
+
+![Cantidad de sismos por año](Plots/CountSisYear.png)
+
+![Magnitud máxima por año](Plots/MagMaxSisYear.png)
+
+![Cantidad de sismos por mes en el año 2015](Plots/CountSisMonth2015.png)
+
+![Magnitud máxima, mínima y promedio en el año 2015](Plots/MagMaxMinMean2015.png)
+
+
+
+
 ## Uso de las Tablas en SQL SMS y PowerBI
 * Las tablas 'Fecha', 'Sismos', 'Ubicacion' y 'Magnitud' se pueden importar en SQL Server Management Studio para realizar consultas y análisis detallados de los datos. Se pueden linkear mediante las columnas ID en cada una de ellas. 
 
